@@ -59,6 +59,8 @@ module "blog_alb" {
 
   security_groups = [module.blog_sg.security_group_id]
 
+  enable_deletion_protection = false
+
 
   listeners = {
     ex-http = {
