@@ -77,6 +77,8 @@ module "blog_alb" {
       protocol         = "HTTP"
       port             = 80
       target_type      = "instance"
+
+      create_attachment = false
     }
   }
 
